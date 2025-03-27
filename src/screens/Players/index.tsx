@@ -3,6 +3,7 @@ import { Container, Form } from "./styles";
 import { HighLight } from "@components/HighLight";
 import { ButtonIcon } from "@components/ButtonIcon";
 import { Input } from "@components/Input";
+import { Filter } from "@components/Filter";
 
 export function Players() {
   return (
@@ -13,6 +14,7 @@ export function Players() {
         <Input placeholder="Person's name" autoCorrect={false} />
         <ButtonIcon iconName="add" />
       </Form>
+      <Filter title="Team 1" />
     </Container>
   );
 }
