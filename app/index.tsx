@@ -1,6 +1,6 @@
 import { Groups } from "@screens/Groups";
 import theme from "@themes/theme";
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components/native";
 import {
   useFonts,
   Roboto_400Regular,
@@ -20,7 +20,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <StatusBar barStyle="light-content" translucent />
-      {fontsLoaded ? <Players /> : <Loading />}
+      {fontsLoaded ? <Groups /> : <Loading />}
     </ThemeProvider>
   );
 }

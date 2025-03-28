@@ -8,11 +8,7 @@ import { ListEmpty } from "@components/ListEmpty";
 import { Button } from "@components/Button";
 
 export function Groups() {
-  const [groups, setGroups] = useState<string[]>([
-    "Group 1",
-    "Group 2",
-    "Group 3",
-  ]);
+  const [groups, setGroups] = useState<string[]>([]);
 
   return (
     <Container>
@@ -29,7 +25,7 @@ export function Groups() {
           <ListEmpty message="How about registering the first group?" />
         }
       />
-       <Button  title="Register group" />
+      <Button title="Register group" />
     </Container>
   );
 }

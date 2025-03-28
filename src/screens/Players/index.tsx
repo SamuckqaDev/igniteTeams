@@ -12,9 +12,7 @@ import { Button } from "@components/Button";
 
 export function Players() {
   const [team, setTeam] = useState<string>("Team 1");
-  const [players, setPlayers] = useState<string[]>([
-
-  ]);
+  const [players, setPlayers] = useState<string[]>([]);
 
   return (
     <Container>
@@ -46,11 +44,13 @@ export function Players() {
         renderItem={({ item }) => (
           <PlayerCard name={item} onRemove={() => console.log("REMOVING")} />
         )}
-        ListEmptyComponent={() => <ListEmpty message="There are no people at this time" />}
+        ListEmptyComponent={() => (
+          <ListEmpty message="There are no people at this time" />
+        )}
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{ flexGrow: 1 }}
       />
-
+      <Button title="Remove Group" type="SECONDARY" />
     </Container>
   );
 }
