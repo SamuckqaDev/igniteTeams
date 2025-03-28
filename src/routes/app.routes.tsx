@@ -3,7 +3,6 @@ import { Groups } from "@screens/Groups";
 import { NewGroup } from "@screens/NewGroup";
 import { Players } from "@screens/Players";
 
-
 const { Navigator, Screen } = createNativeStackNavigator();
 
 export function AppRoutes() {
@@ -11,11 +10,22 @@ export function AppRoutes() {
     <Navigator
       screenOptions={{
         headerShown: false,
+        animation: 'fade_from_bottom'
       }}
+      initialRouteName="Groups"
     >
-      <Screen name="groups" component={Groups} />
-      <Screen name="players" component={Players} />
-      <Screen name="newGroup" component={NewGroup} />
+      <Screen 
+        name="Groups" 
+        component={Groups} 
+      />
+      <Screen 
+        name="Players" 
+        component={Players} 
+      />
+      <Screen 
+        name="NewGroup" 
+        component={NewGroup} 
+      />
     </Navigator>
   );
 }
