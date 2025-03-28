@@ -10,22 +10,12 @@ export function AppRoutes() {
     <Navigator
       screenOptions={{
         headerShown: false,
-        animation: 'fade_from_bottom'
+        animation: "fade_from_bottom",
       }}
-      initialRouteName="Groups"
     >
-      <Screen 
-        name="Groups" 
-        component={Groups} 
-      />
-      <Screen 
-        name="Players" 
-        component={Players} 
-      />
-      <Screen 
-        name="NewGroup" 
-        component={NewGroup} 
-      />
+      <Screen name="Groups" component={Groups} />
+      <Screen name="Players" component={Players} />
+      <Screen name="NewGroup" component={NewGroup} />
     </Navigator>
   );
 }
