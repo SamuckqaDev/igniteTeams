@@ -10,7 +10,7 @@ export function AppRoutes() {
     <Navigator
       screenOptions={{
         headerShown: false,
-        animation: "fade_from_bottom",
+        animation: "slide_from_right",
       }}
     >
       <Screen name="Groups" component={Groups} />

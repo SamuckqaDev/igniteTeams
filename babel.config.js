@@ -11,7 +11,7 @@ module.exports = {
           "@screens": "./src/screens",
           "@assets": "./src/assets",
           "@assets/img": "./src/assets/img",
-
+          "@storage": "./src/storage",
           "@routes": "./src/routes",
           "@utils": "./src/utils",
           "@hooks": "./src/hooks",

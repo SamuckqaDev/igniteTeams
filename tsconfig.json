@@ -12,14 +12,8 @@
       "@hooks/*": ["./src/hooks/*"],
       "@themes/*": ["./src/themes/*"],
       "@storage/*": ["./src/storage/*"],
-      "@assets/img/*": ["./src/assets/img/*"],
-
+      "@assets/img/*": ["./src/assets/img/*"]
     }
   },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    ".expo/types/**/*.ts",
-    "expo-env.d.ts"
-  ]
+  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"]
 }
